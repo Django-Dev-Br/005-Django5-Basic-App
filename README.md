@@ -1,5 +1,5 @@
 
-# 005 Django 4 Basic App
+# 005 Django 4 Basic App (Import View)
 
 ### O que é um App Django?
 
