@@ -46,7 +46,7 @@ Um app no Django é uma aplicação web que faz algo — um grupo de modelos, vi
 3. **Ative o ambiente virtual criado**:
     ```bash
     source myvenv/bin/activate  # Linux
-    myvenv\Scripts ctivate  # Windows
+    myvenv\Scripts\activate  # Windows
     ```
 
 4. **Instale o Django**:
