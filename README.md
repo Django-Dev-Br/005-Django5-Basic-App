@@ -26,12 +26,18 @@ Um app no Django é uma aplicação web que faz algo — um grupo de modelos, vi
     ```
 
 2. **Crie um ambiente virtual**:
+
+   **Windows**
     ```bash
-    python3 -m venv myvenv  
     python -m venv myvenv  
     ```
+    
+    **Linux**
+    ```bash
+    python3 -m venv myvenv  
+    ```
 
-3. **Ative o ambiente virtual criado**:
+4. **Ative o ambiente virtual criado**:
    
      **Windows**
     ```bash
@@ -42,22 +48,22 @@ Um app no Django é uma aplicação web que faz algo — um grupo de modelos, vi
     source myvenv/bin/activate  
     ```
 
-4. **Instale o Django**:
+5. **Instale o Django**:
     ```python
     pip install django==4.2.15
     ```
 
-5. **Acesse a pasta do repositório**:
+6. **Acesse a pasta do repositório**:
     ```bash
     cd 005-Django-4-Basic-App
     ```
     
-6. **Execute o servidor de desenvolvimento**:
+7. **Execute o servidor de desenvolvimento**:
     ```python
     python manage.py runserver
     ```
 
-7. **Acesse a View no Navegador**:
+8. **Acesse a View no Navegador**:
 
    Abra o navegador e vá para o endereço [http://127.0.0.1:8000/status/](http://127.0.0.1:8000/) para ver a mensagem:
 
