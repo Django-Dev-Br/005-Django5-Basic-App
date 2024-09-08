@@ -9,53 +9,51 @@ Um app no Django é uma aplicação web que faz algo — um grupo de modelos, vi
 
 ### Requisitos
 
-- **Python 3.12**  
+- **Python 3.12 com PIP e venv**
+
+- **No [repositório 001](https://github.com/Django-Dev-Br/001-django4-basic-project) há explicações sobre PIP e venv**
+
   [Baixar Python 3.12](https://www.python.org/downloads/release/python-3122/)
 
   Confira o vídeo para saber como trabalhar com múltiplas versões do Python e com venv (ambiente virtual):  
   [![Watch the video](https://img.youtube.com/vi/eetDeQrv0Rs/0.jpg)](https://youtu.be/eetDeQrv0Rs)
 
-- **Virtualenv**
-
-  Para instalar o pacote `virtualenv` no Python, utilize os seguintes comandos:
-
-  - **Linux**:
-    ```bash
-    python3 -m pip install virtualenv
-    ```
-
-  - **Windows**:
-    ```bash
-    python -m pip install virtualenv
-    ```
-
-### Passos para Executar
+### 7 passos simples para executar
 
 1. **Clone o repositório**:
     ```bash
     git clone https://github.com/Django-Dev-Br/005-Django-4-Basic-App.git
-    cd 005-Django-4-Basic-App
     ```
 
 2. **Crie um ambiente virtual**:
     ```bash
-    python3 -m venv myvenv  # Linux
-    python -m venv myvenv  # Windows
+    python3 -m venv myvenv  
+    python -m venv myvenv  
     ```
 
 3. **Ative o ambiente virtual criado**:
+   
+     **Windows**
     ```bash
-    source myvenv/bin/activate  # Linux
-    myvenv\Scripts\activate  # Windows
+    myvenv\Scripts\activate  
+    ```
+    **Linux**
+     ```bash
+    source myvenv/bin/activate  
     ```
 
 4. **Instale o Django**:
-    ```bash
+    ```python
     pip install django==4.2.15
     ```
 
-5. **Execute o servidor de desenvolvimento**:
+5. **Acesse a pasta do repositório**:
     ```bash
+    cd 005-Django-4-Basic-App
+    ```
+    
+6. **Execute o servidor de desenvolvimento**:
+    ```python
     python manage.py runserver
     ```
 
@@ -72,7 +70,7 @@ Um app no Django é uma aplicação web que faz algo — um grupo de modelos, vi
 
 Para criar um novo app em um projeto Django, use o seguinte comando:
 
-```bash
+```python
 python manage.py startapp nome_do_app
 ```
 
