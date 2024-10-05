@@ -1,5 +1,5 @@
 
-# 005 Django 4 Basic App (Import View)
+# 005 Django 5 - Basic App (Import View)
 
 ### O que é um App Django?
 
@@ -10,6 +10,7 @@ Um app no Django é uma aplicação web que faz algo — um grupo de modelos, vi
 ### Requisitos
 
 - **Python 3.12 com PIP e venv**
+- **o Django 5 requer Python 3.10 ou superior.**
 
 - **No [repositório 001](https://github.com/Django-Dev-Br/001-django4-basic-project) há explicações sobre PIP e venv**
 
@@ -22,7 +23,7 @@ Um app no Django é uma aplicação web que faz algo — um grupo de modelos, vi
 
 1. **Clone o repositório**:
     ```bash
-    git clone https://github.com/Django-Dev-Br/005-Django-4-Basic-App.git
+    git clone https://github.com/Django-Dev-Br/005-Django5-Basic-App.git
     ```
 
 2. **Crie um ambiente virtual**:
@@ -49,13 +50,31 @@ Um app no Django é uma aplicação web que faz algo — um grupo de modelos, vi
     ```
 
 5. **Instale o Django**:
-    ```python
-    pip install django==4.2.15
+
+   Fazer a instalação após a ativação da virtual env fará com que a instalação seja feita nessa pasta ao invés do computador. Isso significa que o pacote Django não estará disponivel para todos os usuários do computador, mas apenas para o contexto no qual essa venv esteja ativada. Veremos sua ativação logo abaixo.
+
+    **Instalação manualmente via gerenciador de dependências PIP**
+    ```bash
+    pip install django
+    ```
+    - use, preferencialmente, a versão 5.1. Para tanto, execute o comando:
+
+     ```bash
+    pip install  "django>=5.1,<=5.2"
+    ```
+
+    ----- **OU** -----
+
+    **Instalação via arquivo requirements**
+    ```bash
+    pip install -r requirements.txt
+    ```
+    O arquivo requirements.txt é um arquivo de texto que contém uma lista de pacotes a ser instalado em uma venv. É uma boa prática de programação do ecossistema Python.
     ```
 
 6. **Acesse a pasta do repositório**:
     ```bash
-    cd 005-Django-4-Basic-App
+    cd 005-Django5-Basic-App
     ```
     
 7. **Execute o servidor de desenvolvimento**:
