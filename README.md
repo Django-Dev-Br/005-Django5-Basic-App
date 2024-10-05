@@ -134,6 +134,8 @@ from django.http import HttpResponse  # Importa a classe HttpResponse, responsá
 def example_view(request):
     return HttpResponse("app up and running properly")  # Retorna uma mensagem indicando que o app está funcionando corretamente
 ```
+Comentários:
+example_view(request): Define uma função que recebe uma requisição HTTP e retorna uma resposta indicando que a aplicação está funcionando bem.
 
 Neste projeto, criar uma resposta simples em uma view do Django foi extremamente fácil e direto. Foi necessário modificar apenas dois arquivos:
 
