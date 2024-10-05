@@ -89,7 +89,29 @@ Um app no Django é uma aplicação web que faz algo — um grupo de modelos, vi
    ```
    app up and running properly
    ```
+   
+### Estrutura de Diretórios do Projeto = 1 arquivo (manage.py) e 1 pasta (o projeto Django) contendo 5 outros arquivos.
 
+```
+005-Django5-Basic-App/
+├── db.sqlite3          # Banco de dados SQLite gerado pelo Django
+├── manage.py           # CLI do Django - script que recebe e executa os comandos do Django via terminal
+├── myapp/              # Diretório do aplicativo Django criado para essa funcionalidade
+│   ├── __init__.py     # Marca o diretório como um pacote Python, permitindo importações
+│   ├── apps.py         # Configurações da aplicação Django (metadados da aplicação)
+│   ├── views.py        # arquivo que carrega os templates ou páginas html
+│   ├── migrations/     # Diretório onde ficam os arquivos com as estruturas das tabelas do seu banco de dados
+├── myproject/          # Diretório principal do projeto Django
+│   ├── __init__.py     # Marca o diretório como um pacote Python
+│   ├── asgi.py         # Configurações para o servidor ASGI (usado para aplicações assíncronas)
+│   ├── settings.py     # Configurações do projeto (banco de dados, apps instalados, etc.)
+│   ├── urls.py         # Mapeamento de requisições HTTP e redirecionamento para os templates HTML
+│   ├── wsgi.py         # Configurações para o servidor WSGI (usado para servir a aplicação)
+│   └── __pycache__/    # Diretório com arquivos de cache do projeto (não deve ser versionado)
+├── README.md           # Documento explicativo sobre o projeto e como configurá-lo (essa que vc está lendo agora)
+└── requirements.txt    # Lista de pacotes Python necessários para o projeto
+
+```
 
 ### Como Criar um Novo App Django
 
