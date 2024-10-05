@@ -138,8 +138,7 @@ def example_view(request):
 Neste projeto, criar uma resposta simples em uma view do Django foi extremamente fácil e direto. Foi necessário modificar apenas dois arquivos:
 
 1. myproject/urls.py: Adicionamos a rota principal ('/') para direcionar à função example_view da nossa aplicação (myapp).
-2. 
-3. myapp/views.py: Criamos a função example_view que retorna uma resposta HTTP simples indicando que a aplicação está funcionando corretamente.
+2. myapp/views.py: Criamos a função example_view que retorna uma resposta HTTP simples indicando que a aplicação está funcionando corretamente.
 
 Com apenas essas duas alterações, conseguimos configurar o Django para retornar uma mensagem no navegador ao acessar a URL principal ('/'). Isso mostra o quão ágil e eficiente é trabalhar com o Django, permitindo criar e testar respostas de forma muito prática.
 
