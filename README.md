@@ -70,7 +70,7 @@ Um app no Django é uma aplicação web que faz algo — um grupo de modelos, vi
     pip install -r requirements.txt
     ```
     O arquivo requirements.txt é um arquivo de texto que contém uma lista de pacotes a ser instalado em uma venv. É uma boa prática de programação do ecossistema Python.
-    ```
+    
 
 6. **Acesse a pasta do repositório**:
     ```bash
