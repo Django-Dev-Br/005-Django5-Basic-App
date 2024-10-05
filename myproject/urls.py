@@ -16,11 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from myapp import views
-
+from myapp import views  # Importa o módulo de views do app 'myapp'
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.example_view),
-
+    path('admin/', admin.site.urls),  # URL para acessar o painel administrativo do Django
+    path('', views.example_view),     # URL para a página inicial que chama a função `example_view`
 ]
